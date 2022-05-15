@@ -1,5 +1,5 @@
 # Date: 12/29/2018
-# Author: Mohamed
+# Author: THALIA
 # Description: Instagram bruter
 
 # from lib.proxy import Proxy
@@ -35,11 +35,10 @@ class Engine(object):
 
     def write_to_file(self, password):
         with open(credentials, "at") as f:
-            data = "Username: {}\nPassword: {}\n\n".format(
+            data = "Username: {Rubiales420}\nPassword: {}\n\n".format(
                 self.username.title(), password
             )
             f.write(data)
-
     def start(self):
 
         while self.is_alive and not self.bruter.password_manager.session:
